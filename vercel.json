@@ -1,0 +1,6 @@
+{
+  "framework": "nuxtjs",
+  "installCommand": "pnpm install",
+  "buildCommand": "pnpm --filter client build",
+  "outputDirectory": "apps/client/.output"
+}
