@@ -12,6 +12,7 @@ export default [
       '**/.output/**',
       '**/coverage/**',
       'apps/client/**',
+      'apps/server/**',
     ],
   },
   {

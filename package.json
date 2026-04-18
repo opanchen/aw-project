@@ -14,7 +14,10 @@
     "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit",
     "prepare": "husky",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:server": "pnpm --filter server start:dev",
+    "build:server": "pnpm --filter server build",
+    "typecheck:server": "pnpm --filter server tsc --noEmit"
   },
   "keywords": [],
   "author": "",
