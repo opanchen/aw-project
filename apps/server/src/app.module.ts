@@ -5,6 +5,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config'
 import configuration from './config/configuration'
 import { MongooseModule } from '@nestjs/mongoose'
 import { Connection, ConnectionStates } from 'mongoose'
+import { HealthModule } from './health/health.module'
 
 @Module({
   imports: [
@@ -30,6 +31,7 @@ import { Connection, ConnectionStates } from 'mongoose'
       }),
       inject: [ConfigService],
     }),
+    HealthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
